@@ -1,28 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lora', serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     color: black;
     scroll-behavior: smooth;
 }
 
 header {
-    height: calc(110vh - 3em);
+    height: calc(120vh - 3em);
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../img/difuminado.png");
-    background-size: cover;
-    background-color: rgb(29, 110, 106);
+    background: rgb(222, 234, 252);
+    opacity: 1;
+    position: relative;
+    top: 0;
+    left: 0px;
+    overflow: hidden;
 }
 
 header {
-    padding: 2rem; 
+    padding: 3rem; 
     display: flex;
     flex-direction: column; 
     justify-content: center;
@@ -31,16 +40,25 @@ header {
 }
 
 header > h1 {
-    font-size: 4vw;
-    text-align: center;
+    font-size: 7vw;
     color: white;
-    font-family: 'Signika Negative', sans-serif;
+    width: 1200px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 140px;
+    opacity: 1;
+    text-align: left;
+    
 }
 
 section > h2 {
-    color: #217c7c;
-    font-size: 3vw;
-    font-family: 'Signika Negative', sans-serif;
+    color: rgba(110, 154, 219, 0.626);
+    font-size: 60px;
+    font-family: DM Sans;
 }
 
 section > h3 {
@@ -48,10 +66,20 @@ section > h3 {
 }
 
 header > h4 {
-    font-size: 2vw;
-    text-align: center;
-    color: rgb(214, 247, 204);
+    font-size: 1vw;
+    color: rgb(80, 80, 80);
+    width: 580px;
+    position: absolute;
+    top: 724px;
+    left: 790px;
+    font-family: DM Sans;
+    font-weight: 300;
+    font-size: 32px;
+    opacity: 1;
+    text-align: justified;
 }
+
+
 
 header > p {
     font-size: 2em;
@@ -79,8 +107,9 @@ img {
 
 #menu {
     z-index: 1;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    width: 100%;
+    top: 0; 
     display: block;
 }
 
@@ -88,7 +117,8 @@ img {
     width: 100%;
     height: 3em;
     padding: 0;
-    background-color: rgb(29, 110, 106);
+    margin: 0;
+    background-color: rgba(222, 234, 252, 0.943);
 }
 
 #menu > ul > li {
@@ -97,38 +127,21 @@ img {
 
 #menu > ul > li > a {
     text-decoration: none;
-    color: white;
-}
-
-#menu > ul > li > a:hover {
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  #menu ul li a:hover {
+    color: rgba(104, 141, 193, 0.91);
     text-decoration: underline;
-}
+  }
+
 
 #menu ul{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-}
-
-#about_me > h2 {
-    /* padding: 2em; */
-    /* margin-bottom: 1em; */
-    padding-left: 1.5em;
-}
-
-#about_me > div {
-    display: flex;
-    align-items: center;
-}
-
-#about_me > div > div {
-    padding: 4em;
-}
-
-#Foto figure img {
-    width: 60%;
-    border-radius: 30%;
 }
 
 #projects > div {
@@ -146,14 +159,14 @@ img {
 
 #projects > div > figure {
     position: relative;
-    border: rgb(127, 127, 127) 1px solid;
-    width: 50%;
+    width: 33%;
 }
 
 #projects > div > figure > figcaption {
-    font-family: 'Raleway', sans-serif;
+    font-family: DM Sans;
+    font-weight: 300;
     color: rgb(0, 0, 0);
-    background-color: #d5e658;
+    background-color: rgba(155, 191, 246, 0.861);
     position: absolute;
     top: 0;
     width: 100%;
@@ -183,8 +196,9 @@ img {
 }
 
 #illustrations  > div > figure {
-    flex: 30%;
+    flex: 33%;
     position: relative;
+    width: 33%;
 }
 
 
@@ -207,17 +221,49 @@ img {
     color: black;
     /* font-weight: bold;
     font-size: 1.5em; */
-    background-color: #d5e658;
+    background-color: rgba(155, 191, 246, 0.861);
 }
 
 #illustrations  > div > figure:hover > figcaption {
     opacity: 1;
 }
 
+#about_me > h2 {
+    /* padding: 2em; */
+    /* margin-bottom: 1em; */
+    padding-left: 1em;
+
+}
+
+#about_me > div {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    width: 80%;
+    top: 0px;
+    left: 0px;
+}
+
+#about_me > div > div {
+    padding: 3em;
+    text-align: justified;
+}
+
+#Aptitudes {
+    padding: 0em;
+    text-align: justified;
+    text-decoration: underline; 
+}
+
+#Foto figure img {
+    width: 400%;
+    border-radius: 5%;
+}
+
 
 footer {
     padding: 1em 3em;
-    background-color:rgb(29, 110, 106);
+    background-color:rgba(110, 154, 219, 0.628);
 }
 
 footer > p {
@@ -272,7 +318,7 @@ footer > p > a {
     border: black 2px solid;
     margin: 1em 0;
     border-radius: 7px;
-    background-color: #e8f2f3;
+    background-color: rgba(155, 191, 246, 0.173);
 }
 
 #contacto > div:nth-child(2) > div > form > textarea {
@@ -312,7 +358,7 @@ footer > p > a {
 
 #contacto > div:nth-child(2) > div > ul > li > a > i {
     font-size: 3em;
-    color: rgb(29, 110, 106);
+    color: rgba(110, 154, 219, 0.628);
 }
 
 #contacto > div:nth-child(2) > iframe {
@@ -395,20 +441,52 @@ footer > p > a {
 
 @media screen and (max-width: 600px)  {
     #menu ul{
-        height: 25vh;
+        height: 8vh;
         display: flex;
-        flex-flow: column nowrap;
+        /* flex-flow: column nowrap; */
         justify-content: space-evenly;
         align-items: center;
     }
 
-    #about_me #Foto {
+    #menu > ul > li > a {
+        font-size: 16px;
+    }
+
+    #about_me > .div1 {
         width: 100%;
+    }
+    
+    #about_me > .div2 {
+        width: 100%;
+    }
+   
+    #about_me > h2 {
+        padding-left: 2em;
+    } 
+
+    #about_me > div {
+        width: 100%;
+    }
+
+    
+    #about_me > div {
+        width: 100%;
+        display: flex;
+    }
+    
+    #Foto figure img {
+        width: 80%;
+        border-radius: 5%;
+    }
+    
+    #about_me #Foto {
+        width: 60%;
     }
 
     section > h2 {
         font-size: 6vw;
-        font-family: 'Signika Negative', sans-serif;
+        font-family: DM Sans;
+        font-weight: 500;
     }
     
     #projects > div > figure {
@@ -418,7 +496,36 @@ footer > p > a {
     #illustrations > div > figure {
         width: 100%;
     }
-}
+
+    #contacto > div > div > form {
+        padding-bottom: 10%;
+    }
+
+    #contacto > div > div > ul {
+        padding-bottom: 10%;
+    }
+
+    header > h1 {
+        width: 80%;
+        color: rgb(0, 0, 0);
+        font-size: 55px;
+        
+    }
+
+    header > h4 {
+        font-size: 1vw;
+        color: rgb(80, 80, 80);
+        width: 300px;
+        position: absolute;
+        top: 724px;
+        left: 125px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    header {
+        height: calc(110vh - 3em);
+    }
 
 @media screen and (max-width: 1000px)  {
     #illustrations > div {
@@ -450,5 +557,3 @@ footer > p > a {
     }
 
 }
-
-
