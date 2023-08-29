@@ -42,14 +42,14 @@ header {
 header > h1 {
     font-size: 7vw;
     color: white;
-    width: 1200px;
+    width: 1100px;
     color: rgb(0, 0, 0);
     position: relative;
     top: 0px;
     left: 0px;
     font-family: DM Sans;
     font-weight: 400;
-    font-size: 140px;
+    font-size: 130px;
     opacity: 1;
     text-align: left;
     
@@ -71,10 +71,11 @@ header > h4 {
     width: 580px;
     position: absolute;
     top: 724px;
-    left: 790px;
+    /* left: 790px; */
+    left: 50%;
     font-family: DM Sans;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 30px;
     opacity: 1;
     text-align: justified;
 }
@@ -439,95 +440,16 @@ footer > p > a {
     padding-left: 1.5em;
 }
 
-@media screen and (max-width: 600px)  {
-    #menu ul{
-        height: 8vh;
-        display: flex;
-        /* flex-flow: column nowrap; */
-        justify-content: space-evenly;
-        align-items: center;
+
+@media screen and (max-width: 1000px)  {
+    #projects > div {
+        flex-direction: column;
     }
 
-    #menu > ul > li > a {
-        font-size: 16px;
-    }
-
-    #about_me > .div1 {
-        width: 100%;
-    }
-    
-    #about_me > .div2 {
-        width: 100%;
-    }
-   
-    #about_me > h2 {
-        padding-left: 2em;
-    } 
-
-    #about_me > div {
-        width: 100%;
-    }
-
-    
-    #about_me > div {
-        width: 100%;
-        display: flex;
-    }
-    
-    #Foto figure img {
-        width: 80%;
-        border-radius: 5%;
-    }
-    
-    #about_me #Foto {
-        width: 60%;
-    }
-
-    section > h2 {
-        font-size: 6vw;
-        font-family: DM Sans;
-        font-weight: 500;
-    }
-    
     #projects > div > figure {
         width: 100%;
     }
-    
-    #illustrations > div > figure {
-        width: 100%;
-    }
 
-    #contacto > div > div > form {
-        padding-bottom: 10%;
-    }
-
-    #contacto > div > div > ul {
-        padding-bottom: 10%;
-    }
-
-    header > h1 {
-        width: 80%;
-        color: rgb(0, 0, 0);
-        font-size: 55px;
-        
-    }
-
-    header > h4 {
-        font-size: 1vw;
-        color: rgb(80, 80, 80);
-        width: 300px;
-        position: absolute;
-        top: 724px;
-        left: 125px;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    header {
-        height: calc(110vh - 3em);
-    }
-
-@media screen and (max-width: 1000px)  {
     #illustrations > div {
         flex-direction: column;
     }
@@ -539,8 +461,20 @@ footer > p > a {
 
     #about_me > div {
         flex-direction: column;
-        width: 60%;
+        width: 95%;
         margin-top: 1em;
+        margin-left: 1em;
+    }
+
+    #Foto figure img {
+        width: 50%;
+        border-radius: 5%;
+    }
+    
+    #about_me #Foto {
+        width: 80%;
+        margin-left: 18em;
+        margin-bottom: 3em;
     }
 
     #contacto > div {
@@ -555,5 +489,125 @@ footer > p > a {
     #contacto > div:nth-child(2) > div {
         margin-bottom: 1em;
     }
+
+    header > h1 {
+        width: 75%;
+        color: rgb(0, 0, 0);
+        font-size: 100px;
+        
+    }
+
+    header > h4 {
+        font-size: 20px;
+        color: rgb(80, 80, 80);
+        width: 300px;
+        position: absolute;
+        top: 754px;
+        left: 60%;
+        text-align: center;
+    }
+
+    header {
+        height: calc(130vh - 3em);
+    }
+
+    #contacto > div > div > form {
+        padding-bottom: 10%;
+    }
+
+    #contacto > div > div > ul {
+        padding-bottom: 10%;
+    }
+
+}
+
+    @media screen and (max-width: 600px)  {
+        #menu ul{
+            height: 7vh;
+            display: flex;
+            /* flex-flow: column nowrap; */
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    
+        #menu > ul > li > a {
+            font-size: 16px;
+        }
+    
+        #about_me > .div1 {
+            width: 100%;
+        }
+        
+        #about_me > .div2 {
+            width: 100%;
+        }
+       
+        #about_me > h2 {
+            padding-left: 15%;
+        } 
+    
+        #about_me > div {
+            width: 90%;
+        }
+    
+        
+        #about_me > div {
+            width: 90%;
+            display: flex;
+        }
+        
+        #Foto figure img {
+            width: 70%;
+            border-radius: 5%;
+        }
+        
+        #about_me #Foto {
+            width: 100%;
+            margin-right: 50%;
+        }
+    
+        section > h2 {
+            font-size: 6vw;
+            font-family: DM Sans;
+            font-weight: 500;
+        }
+        
+        #projects > div > figure {
+            width: 100%;
+        }
+        
+        #illustrations > div > figure {
+            width: 100%;
+        }
+    
+        #contacto > div > div > form {
+            padding-bottom: 10%;
+        }
+    
+        #contacto > div > div > ul {
+            padding-bottom: 10%;
+        }
+    
+        header > h1 {
+            width: 80%;
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+            
+        }
+    
+        header > h4 {
+            font-size: 1vw;
+            color: rgb(80, 80, 80);
+            width: 280px;
+            position: absolute;
+            top: 754px;
+            left: 90px;
+            font-size: 16px;
+            text-align: center;
+        }
+    
+        header {
+            height: calc(130vh - 3em);
+        }
 
 }
