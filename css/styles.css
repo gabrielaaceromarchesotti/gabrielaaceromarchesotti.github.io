@@ -240,7 +240,7 @@ img {
     display: flex;
     align-items: center;
     opacity: 1;
-    width: 80%;
+    width: 75%;
     top: 0px;
     left: 0px;
 }
@@ -257,8 +257,9 @@ img {
 }
 
 #Foto figure img {
-    width: 400%;
+    width: 380%;
     border-radius: 5%;
+    margin-right: 20%;
 }
 
 
@@ -563,7 +564,7 @@ footer > p > a {
         
         #about_me #Foto {
             width: 100%;
-            margin-right: 50%;
+            margin-right: 60%;
         }
     
         section > h2 {
@@ -605,9 +606,14 @@ footer > p > a {
             font-size: 16px;
             text-align: center;
         }
+        section > h2 {
+            color: rgba(110, 154, 219, 0.626);
+            font-size: 35px;
+            font-family: DM Sans;
+        }
     
         header {
             height: calc(130vh - 3em);
-        }
+        }  
 
 }
